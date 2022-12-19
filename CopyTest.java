@@ -22,10 +22,11 @@ public class CopyTest {
     public void testMultiplyArrays(){
         Integer[] arrayInt1 = {1, 2, 3, 4, 5};
         Integer[] arrayInt2 = {1, 2, 3, 4, 5};
+        Integer[] newArray = {1,4,10,20,35,44,46,40,25};
 
-//        for(int i=0;i<arrayInt.length;i++) {
-//            Assertions.assertEquals(arrayInt[i],new Copy().copyArray(arrayInt)[i]);
-//        }
+        for(int i=0;i<newArray.length;i++) {
+            Assertions.assertEquals(newArray[i],new Copy().multiplyArrays(arrayInt1,arrayInt2)[i]);
+        }
 
     }
 }
